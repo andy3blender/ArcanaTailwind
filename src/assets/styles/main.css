@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: 'Cenobyte';
+  src: local('Cenobyte'), url(../fonts/cenobyte.ttf) format('ttf');
+}
+
+@tailwind utilities;
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+@layer components {
+  .members-card{
+    @apply mt-7 w-80 rounded-md shadow hover:shadow-md transition duration-300;
+  }
+  .header{
+    @apply flex flex-wrap justify-around py-4 pb-7 px-2 mb-4 border-b border-gray-300;
+  }
+  .vinculo{
+    @apply text-blue-700 text-base hover:text-blue-500
+  }
+}
